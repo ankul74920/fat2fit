@@ -1,0 +1,32 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.body{
+    width: 716px;
+    height: 350px;
+    display: grid;
+    margin: 50px 0px 0px 50px;
+    grid-template-columns: 300px 300px auto;
+    grid-template-rows: ;
+    grid-template-rows: 150px 100px;
+    grid-gap: 20px
+}
+.first{
+    background-color: red;
+}
+.second{
+    background-color: yellow;
+}
+.third{
+    background-color: coral;
+}
+.fourth{
+    background-color: brown;
+}
+.five{
+    background-color: aqua;
+}
+.six{
+    background-color: antiquewhite;
+}

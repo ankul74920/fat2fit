@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <title>drop down</title>
+        <script src="https://kit.fontawesome.com/dd15047d18.js" crossorigin="anonymous"></script>
+        <style>
+            body{
+                margin: 0px;
+                padding: 0px;
+            }
+            .navbar{
+                width: 100%;
+               
+                background-color: hsl(120, 2%, 47%);
+                
+            }
+            .maindropdown{
+                width: 100%;
+                height: 250px;
+                clear: both;
+
+            }
+            .maindropdown ul{
+                padding: 0px;
+                
+            }
+            .maindropdown ul li{
+                float: left;
+                background-color: black;
+                color: wheat;
+                width: 200px;
+                list-style: none;
+                font-size: 25px;
+                text-transform: capitalize;
+                text-align: center;
+                height: 50px;
+                line-height: 50px;
+                opacity: 0.6;
+            }
+            .maindropdown ul li i{
+                font-size: 20px;
+            }
+            .maindropdown ul li ul{
+                display: none;
+                
+            }
+            .maindropdown ul li:hover> ul{
+                display: block;
+               
+            }
+            .maindropdown ul li:hover{
+                background-color: #32cd32;
+                opacity: 0.9;
+            }
+            .maindropdown ul li ul li{
+                position: relative;
+            }
+            .maindropdown ul li ul li ul{
+                position: absolute;
+                left: 200px;
+                top: 0px;
+            }
+            .form-name{
+                color: white;
+                margin-left: 50px;
+                line-height: 50px;
+                letter-spacing: 0.56;
+                font-size: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="maindropdown">
+                <ul>
+                    <li>home <i class="fa-solid fa-angle-right"></i>
+                        <ul>
+                            <li>name <i class="fa-solid fa-angle-right"></i>
+                                <ul>
+                                    <li>email</li>
+                                    <li>aadhar</li>
+                                    <li>education <i class="fa-solid fa-angle-right"></i>
+                                        <ul>
+                                            <li>aaaaaa</li>
+                                            <li>pppppp</li>
+                                            <li>aaaaaaa</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>mobile</li>
+                        </ul>
+                    </li>
+                    <li>about <i class="fa-solid fa-angle-right"></i>
+                        <ul>
+                            <li>gopalgang</li>
+                            <li>bihar</li>
+                            <li>siwan</li>
+                            <li>chhapra</li>
+                            <li>motihari <i class="fa-solid fa-angle-right"></i>
+                                <ul>
+                                    <li>collage</li>
+                                    <li>school</li>
+                                    <li>village</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>class <i class="fa-solid fa-angle-right"></i>
+                        <ul>
+                            <li>sumit</li>
+                            <li>sujit</li>
+                            <li>manjit <i class="fa-solid fa-angle-right"></i>
+                                <ul>
+                                    <li>india</li>
+                                    <li>bharat</li>
+                                    <li>hindustan</li>
+                                </ul>
+                            </li>
+                            <li>niraj</li>
+                        </ul>
+                    </li>
+                    <li>section</li>
+
+                </ul>
+            </div>
+            <form>
+                <div class="form-name">
+                First Name : <input type="text" value=""><br>
+                Last Name : <input type="text" value=""><br>
+                Password : <input type="password" value=""><br>
+                Email : <input type="text" value=""><br>
+                Gender : <input type="radio" name="Gender" value="male"> male
+                         <input type="radio" name="Gender" value="female"> female <br>
+                checbook : <input type="checkbox" value="a"> a
+                           <input type="checkbox" value="b"> b
+                            <input type="checkbox" value="c"> c <br>
+                            <input type="button" value="button here"> 
+                            <input type="submit" value="click me"> 
+             </div>
+          </form>
+        </div>
+    </body>
+</html>

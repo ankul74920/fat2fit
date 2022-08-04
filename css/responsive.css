@@ -1,0 +1,261 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+   width: 100%;
+   height: 80px;
+   background-color: red;
+
+}
+label.logo{
+    text-transform: capitalize;
+    font-size: 35px;
+    font-family: sans-serif;
+    line-height: 80px;
+    padding: 0px 100px;
+    color: white;
+    
+}
+nav ul{
+    float: right;
+    
+    margin-right: 40px;
+    margin-top: 0px;
+}
+nav li{
+    list-style: none;
+    margin: 0px 10px;
+    display: inline-block;
+    
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.checkbtn{
+    color: white;
+    font-size: 30px;
+    margin-right: 40px;
+    float: right;
+    line-height: 40px;
+    cursor: pointer;
+    display: none;
+}
+.checkbtn i{
+    margin-top: 30px;
+}
+
+ #check{
+    display: none; 
+ }
+.btn{
+    padding: 12px 10px;
+    background-color: #fc036b;
+    color: white;
+    border-radius: 20px;
+    margin: 5px auto;
+}
+.main-header{
+    width: 100%;
+    height: 500px;
+    background-image: url('./images.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.header-contant{
+   color: white;
+   align-items: center;
+   margin-bottom: 110px;
+}
+.header-contant h2{
+    font-size: 30px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    letter-spacing: 0.56;
+}
+.line{
+    width: 150px;
+    height: 5px;
+    border-radius: 5px;
+    background-color:#fc036b;
+    margin: 10px auto;
+}
+.header-contant h1{
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    letter-spacing: 0.56;
+}
+.btn{
+    padding: 8px 15px;
+    background-color: #fc036b;
+    color: white;
+    border-radius: 20px;
+    margin: 5px auto;
+    
+    
+}
+.section{
+    width: 100%;
+    margin: 80px auto;
+}
+.title h1{
+    text-align: center;
+    font-size: 50px;
+    text-transform: capitalize;
+
+}
+.row{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-top: 70px;
+
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.col h2{
+    font-size: 30px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    letter-spacing: 0.56;
+}
+.col p{
+    font-size: 18px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    letter-spacing: .56;
+}
+.explore{
+    background-image: url('./image3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+}
+.explore-contant{
+    width: 60%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.explore-contant h1{
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-size: 50px;
+    letter-spacing: 0.56;
+}
+.explore-contant p{
+    font-size: 18px;
+    font-family: sans-serif;
+    letter-spacing: 0.56;
+
+}
+.explore-contant .btn{
+    margin-top: 30px;
+  
+}
+.tours .row .col{
+    width: 50%;
+ 
+}
+.contant-col{
+    width: 40%;
+}
+.col contant-col h1{
+    font-size: 50px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    letter-spacing: 0.56;
+}
+.col-contant-col p{
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    letter-spacing: 0.56;
+
+}
+.image-col{
+    width:60%;
+}
+.image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+
+}
+.image-gallery img{
+    max-width: 300px;
+    margin: 10px;
+}
+.footer{
+    width: 100%;
+    height: 100px;
+    text-align:center;
+     background-color: darkgoldenrod;
+}
+.footer p{
+    text-transform: capitalize;
+    font-size: 16px;
+    font-family: sans-serif;
+    padding-top: 17px;
+}
+@media  (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 60px;
+    }
+    .checkbtn{
+        display:block;
+    }
+    
+    ul{
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        position: fixed;
+        top: 80px;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0px;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    .btn{
+        width: 17%;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    
+}
